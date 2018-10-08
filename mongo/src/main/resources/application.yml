@@ -1,4 +1,6 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://name:pass@localhost:27017/test
+      #默认沒有设置用户密码
+      uri: mongodb://localhost:27017/test
+      # 开启密码后 mongodb://user:password@your.db.ip.address:27017/foo

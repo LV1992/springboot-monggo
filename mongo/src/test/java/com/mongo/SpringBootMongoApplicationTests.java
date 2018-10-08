@@ -24,4 +24,10 @@ public class SpringBootMongoApplicationTests {
         userDao.saveUser(user);
     }
 
+
+    @Test
+    public void findUserByUserName(){
+        UserModel user= userDao.findUserByUserName("TEST");
+        System.out.println("user is "+user);
+    }
 }
