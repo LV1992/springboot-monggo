@@ -1,13 +1,16 @@
-package com.mongo.mapper;
+package com.mongo.service;
 
+import com.mongo.mapper.UserDao;
 import com.mongo.model.UserModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
+import org.springframework.stereotype.Service;
 
-public class UserDaoImpl implements UserDao{
+@Service
+public class UserDaoImpl implements UserDao {
     @Autowired
     private MongoTemplate mongoTemplate;
 
